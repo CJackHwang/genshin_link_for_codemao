@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>跳转按钮</title>
+    <title>自动跳转</title>
     <style>
         body {
             display: flex;
@@ -40,6 +40,12 @@
     </style>
 </head>
 <body>
-    <a class="button" href="https://ys.mihoyo.com/cloud/m/#/" target="_blank">原神，启动！</a>
+    <a id="autoRedirect" class="button" href="https://ys.mihoyo.com/cloud/m/#/" target="_blank">原神，启动！</a>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("autoRedirect").click();
+        }
+    </script>
 </body>
 </html>
