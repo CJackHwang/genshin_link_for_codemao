@@ -1,1 +1,52 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳转星铁</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+            margin: 0;
+        }
+        .button {
+            background-color: black;
+            border: 2px solid black;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #333;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .button:active {
+            background-color: #555;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <a id="autoRedirect" class="button" href="https://sr.mihoyo.com/cloud/m/" target="_blank">Honkai：StarRail!</a>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("autoRedirect").click();
+        }
+    </script>
+</body>
+</html>
